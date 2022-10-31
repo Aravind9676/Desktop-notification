@@ -1,13 +1,7 @@
 # Desktop-notification
-from plyer import notification
+from notifypy import Notify
 
-notification_title = 'My application'
-notification_message = 'Thank you. Have a Good Day.'
-
-notification.notify(
-    title=notification_title,
-    message=notification_message,
-    app_icon=None,
-    timeout=10,
-    toast=False
-)
+notification = Notify()
+notification.title = "TechSnap"
+notification.message = "choose your carrer and start your project now"
+notification.send()
